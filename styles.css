@@ -117,3 +117,16 @@ body > * {
   text-align: center;
   font-family: var(--sans-serif-font);
 }
+
+.sort-reports {
+  color: var(--forest-green);
+  font-weight: bolder;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 4em;
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+}
