@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <div className="NavBarPlaceholder">
+    <div class="header">
       <h1>Navbar Goes Here</h1>
     </div>
-    <div className="ContactUsContainer">
+    <div class="card">
       <h2>Contact Us</h2>
       <form>
         <label for="name">Full Name:</label>
@@ -23,9 +24,13 @@
         <br />
         <label for="enter_concern">Enter your concern:</label>
         <br />
-        <textarea id="enter_concerm" name="enter_concern" rows="4" cols="50">
-Enter your concern here...</textarea
-        >
+        <textarea
+          id="enter_concerm"
+          name="enter_concern"
+          rows="4"
+          cols="50"
+          placeholder="Enter your concern here..."
+        ></textarea>
         <br />
         <input type="submit" value="Submit" />
       </form>
