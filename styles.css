@@ -39,6 +39,14 @@ body * {
   align-content: center;
 }
 
+.main-page-content {
+  min-width: 50%;
+  max-width: 80%;
+  width: 20em;
+  height: fill;
+  margin: auto;
+}
+
 /* General Elements */
 
 .button {
@@ -75,6 +83,10 @@ body * {
 .card h3 {
   color: var(--forest-green);
   font-family: var(--sans-serif-font);
+}
+
+.card b {
+  color: var(--forest-green);
 }
 
 /* Airline Reports Page */
