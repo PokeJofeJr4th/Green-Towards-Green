@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div className="NavBarPlaceholder">
+      <h1>Navbar Goes Here</h1>
+    </div>
+    <div className="ContriButionReportContainer">
+      <h2>Contribution Report</h2>
+      <form>
+        <label for="title">Title:</label>
+        <input type="text" id="title" />
+        <br />
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" />
+        <br />
+        <label>Select Contribution Type:</label>
+        <br />
+        <input
+          type="radio"
+          id="fuel_research"
+          name="contribution_type"
+          value="fuel_research"
+        />
+        <label for="fuel_research">Fuel Research</label>
+        <br />
+        <input
+          type="radio"
+          id="planting_trees"
+          name="contribution_type"
+          value="planting_trees"
+        />
+        <label for="planting_trees">Planting Trees</label>
+        <br />
+        <input
+          type="radio"
+          id="compostable_waste"
+          name="contribution_type"
+          value="compostable_waste"
+        />
+        <label for="compostable_waste">Compostable Waste</label>
+      </form>
+    </div>
+  </body>
+</html>
