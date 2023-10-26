@@ -1,5 +1,70 @@
-.profile-img {
+html {
+  --forest-green: #141;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/1082411378/photo/magical-fairytale-forest.jpg?s=612x612&w=0&k=20&c=3iw53YdeeFEqRuxcUL0UCQZUMJ3e2IRtUfvgSjAysjQ=");
+  background-size: cover;
+}
+
+/* Header */
+.header {
+  background-color: var(--forest-green);
+  color: white;
+  align-items: center;
+  align-content: center;
+}
+
+.header * {
+  text-align: center;
+}
+
+/* General Elements */
+
+.button {
+  border-radius: 4px;
+  color: inherit;
+  margin: 1px;
+  padding: 1px;
+  text-decoration: inherit;
+}
+
+.button :hover {
+  margin: 0px;
+  padding: 2px;
+  color: inherit;
+}
+
+.card {
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: -10px 10px 5px 3px var(--forest-green);
+  position: relative;
+}
+
+.card .profile-img {
+  position: absolute;
+  right: 1em;
+  top: 1em;
   height: 2em;
   width: 2em;
   border-radius: 1em;
+}
+
+/* Airline Reports Page */
+
+.airline-reports {
+  min-width: 50%;
+  max-width: 80%;
+  width: 20em;
+  height: fill;
+  margin: auto;
+  background-color: #fff8;
+  padding: 4em;
+}
+
+.airline-reports h2 {
+  color: var(--forest-green);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
