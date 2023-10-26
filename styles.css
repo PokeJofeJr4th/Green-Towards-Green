@@ -1,5 +1,6 @@
 html {
   --forest-green: #141;
+  --sans-serif-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body::before {
@@ -51,6 +52,7 @@ body * {
   background-color: white;
   box-shadow: -10px 10px 5px 3px var(--forest-green);
   position: relative;
+  padding: 0.5em;
 }
 
 .card .profile-img {
@@ -60,6 +62,11 @@ body * {
   height: 2em;
   width: 2em;
   border-radius: 1em;
+}
+
+.card h3 {
+  color: var(--forest-green);
+  font-family: var(--sans-serif-font);
 }
 
 /* Airline Reports Page */
@@ -77,5 +84,5 @@ body * {
 .airline-reports h2 {
   color: var(--forest-green);
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--sans-serif-font);
 }
