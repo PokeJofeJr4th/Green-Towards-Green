@@ -1,7 +1,7 @@
 html {
   /* define some variables we can use later */
-  --forest-green: #141;
-  --forest-green-transparent: #1418;
+  --forest-green: #241;
+  --forest-green-transparent: #2418;
   --sans-serif-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -86,13 +86,14 @@ body > * {
   margin: 0px;
   padding: 2px;
   color: inherit;
+  cursor: pointer;
 }
 
 .card {
   /* this class handles rounded corners and shadow */
   border-radius: 30px;
   background-color: white;
-  box-shadow: -10px 10px 5px 3px var(--forest-green-transparent);
+  box-shadow: -10px 10px 3px var(--forest-green-transparent);
   position: relative;
   padding: 0.5em;
 }
