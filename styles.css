@@ -1,26 +1,34 @@
 html {
+  /* define some variables we can use later */
   --forest-green: #141;
   --forest-green-transparent: #1418;
   --sans-serif-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body::before {
+  /* the trees background image */
   background-image: url("https://media.istockphoto.com/id/1082411378/photo/magical-fairytale-forest.jpg?s=612x612&w=0&k=20&c=3iw53YdeeFEqRuxcUL0UCQZUMJ3e2IRtUfvgSjAysjQ=");
+  /* prevent the image from tiling */
   background-size: cover;
   content: "";
   position: absolute;
+  /* make sure it takes up the whole screen */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  /* make the image transparent */
   filter: opacity(50%);
 }
 
 body {
+  /* get rid of awkward margins that are inserted by default */
   margin: 0;
+  height: 100vh;
 }
 
 body > * {
+  /* magical spell to prevent the background image from covering everything up */
   position: relative;
 }
 
@@ -40,17 +48,20 @@ body > * {
 /* Utility Classes */
 
 .send-right {
+  /* anything with this class will go as far to the right as it can */
   position: absolute;
   right: 1em;
 }
 
 .center {
+  /* anything with this class will center elements inside of it */
   text-align: center;
   align-items: center;
   align-content: center;
 }
 
 .main-page-content {
+  /* anything with this class will be set to a reasonable width based on screen size and centered on the screen */
   min-width: 50%;
   max-width: 80%;
   width: 20em;
@@ -78,6 +89,7 @@ body > * {
 }
 
 .card {
+  /* this class handles rounded corners and shadow */
   border-radius: 30px;
   background-color: white;
   box-shadow: -10px 10px 5px 3px var(--forest-green-transparent);
@@ -95,17 +107,20 @@ body > * {
 }
 
 .card h2 {
+  /* headings are green and sans-serif */
   color: var(--forest-green);
   font-family: var(--sans-serif-font);
 }
 
 .card b {
+  /* bold text becomes green */
   color: var(--forest-green);
 }
 
 /* Airline Reports Page */
 
 .airline-reports {
+  /* the reports page has a different background color */
   margin-top: 0;
   height: 100%;
   background-color: #fff8;
@@ -113,12 +128,14 @@ body > * {
 }
 
 .airline-reports h2 {
+  /* the heading on airline-reports is green and sans-serif */
   color: var(--forest-green);
   text-align: center;
   font-family: var(--sans-serif-font);
 }
 
 .sort-reports {
+  /* styles to make the ≡ button look presentable */
   color: var(--forest-green);
   font-weight: bolder;
   position: absolute;
