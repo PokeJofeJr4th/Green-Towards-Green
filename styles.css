@@ -80,7 +80,7 @@ body * {
   border-radius: 1em;
 }
 
-.card h3 {
+.card h2 {
   color: var(--forest-green);
   font-family: var(--sans-serif-font);
 }
@@ -92,11 +92,6 @@ body * {
 /* Airline Reports Page */
 
 .airline-reports {
-  min-width: 50%;
-  max-width: 80%;
-  width: 20em;
-  height: fill;
-  margin: auto;
   background-color: #fff8;
   padding: 4em;
 }
