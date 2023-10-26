@@ -1,5 +1,6 @@
 html {
   --forest-green: #141;
+  --forest-green-transparent: #1418;
   --sans-serif-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,7 +16,11 @@ body::before {
   filter: opacity(50%);
 }
 
-body * {
+body {
+  margin: 0;
+}
+
+body > * {
   position: relative;
 }
 
@@ -25,6 +30,7 @@ body * {
   color: white;
   align-items: center;
   align-content: center;
+  padding: 1em;
 }
 
 .header * {
@@ -32,6 +38,11 @@ body * {
 }
 
 /* Utility Classes */
+
+.send-right {
+  position: absolute;
+  right: 1em;
+}
 
 .center {
   text-align: center;
@@ -45,11 +56,13 @@ body * {
   width: 20em;
   height: fill;
   margin: auto;
+  margin-top: 2em;
 }
 
 /* General Elements */
 
 .button {
+  background-color: #fff4;
   border-radius: 4px;
   color: inherit;
   margin: 1px;
@@ -57,7 +70,8 @@ body * {
   text-decoration: inherit;
 }
 
-.button :hover {
+.button:hover {
+  background-color: #fff6;
   margin: 0px;
   padding: 2px;
   color: inherit;
@@ -66,7 +80,7 @@ body * {
 .card {
   border-radius: 30px;
   background-color: white;
-  box-shadow: -10px 10px 5px 3px var(--forest-green);
+  box-shadow: -10px 10px 5px 3px var(--forest-green-transparent);
   position: relative;
   padding: 0.5em;
 }
@@ -92,6 +106,8 @@ body * {
 /* Airline Reports Page */
 
 .airline-reports {
+  margin-top: 0;
+  height: 100%;
   background-color: #fff8;
   padding: 4em;
 }
