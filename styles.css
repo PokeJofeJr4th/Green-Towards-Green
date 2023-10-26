@@ -31,6 +31,14 @@ body * {
   text-align: center;
 }
 
+/* Utility Classes */
+
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
 /* General Elements */
 
 .button {
