@@ -1,8 +1,12 @@
 html {
   /* define some variables we can use later */
   --forest-green: #241;
+  --light-green: #584;
   --forest-green-transparent: #2418;
   --sans-serif-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --tint-light: #fff2;
+  --tint-mid: #fff3;
+  --tint-dark: #0002;
 }
 
 body::before {
@@ -47,6 +51,10 @@ body > * {
 
 /* Utility Classes */
 
+.full-width {
+  width: 100%;
+}
+
 .send-right {
   /* anything with this class will go as far to the right as it can */
   position: absolute;
@@ -58,6 +66,15 @@ body > * {
   text-align: center;
   align-items: center;
   align-content: center;
+}
+
+form,
+.left-block {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  text-align: left;
+  align-content: left;
 }
 
 .main-page-content {
@@ -72,19 +89,45 @@ body > * {
 
 /* General Elements */
 
+input[type="submit"] {
+  color: white;
+  font-family: var(--sans-serif-font);
+  background-color: var(--forest-green);
+  border-radius: 1em;
+  border: none;
+  font-size: 2em;
+  width: 50%;
+  margin-top: 0.5em;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 0.1em;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 2px solid var(--light-green);
+}
+
 .button {
-  background-color: #fff4;
+  background-color: var(--tint-mid);
   border-radius: 4px;
   color: inherit;
   margin: 1px;
-  padding: 1px;
+  padding: 0.5em;
   text-decoration: inherit;
+  border-color: var(--tint-light);
+  border-width: 5px;
+  border-style: solid;
+  border-bottom-color: var(--tint-dark);
+  border-right-color: var(--tint-dark);
 }
 
 .button:hover {
-  background-color: #fff6;
-  margin: 0px;
-  padding: 2px;
+  border-top-color: var(--tint-dark);
+  border-left-color: var(--tint-dark);
+  border-bottom-color: var(--tint-light);
+  border-right-color: var(--tint-light);
   color: inherit;
   cursor: pointer;
 }
@@ -100,11 +143,11 @@ body > * {
 
 .card .profile-img {
   position: absolute;
-  right: 1em;
-  top: 1em;
-  height: 2em;
-  width: 2em;
-  border-radius: 1em;
+  right: 1.5em;
+  top: 1.5em;
+  height: 3em;
+  width: 3em;
+  border-radius: 1.5em;
 }
 
 .card h2 {
@@ -140,11 +183,12 @@ body > * {
   color: var(--forest-green);
   font-weight: bolder;
   position: absolute;
-  top: 1em;
+  top: 0.5em;
   right: 1em;
   font-size: 4em;
   text-align: center;
   width: 1em;
   height: 1em;
   border-radius: 0.25em;
+  padding: 0;
 }
