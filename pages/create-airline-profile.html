@@ -2,37 +2,48 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="../styles.css" />
-    </head>
-    <form action="action_page.php" style="border:1px solid #ccc">
-        <body> 
+  </head>
+  <body>
+    <form action="action_page.php" style="border: 1px solid #ccc">
+      <div class="container">
+        <h1>Create a User Profile</h1>
+        <hr />
 
-            <div class="container">
-                <h1>Create a User Profile</h1>
-                <hr>
-                
-                <label for="email"><b>Email: </b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
-                
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="password-repeat" required>
-                
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Select an Airlines</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Delta</a>
-                        <a href="#">American Airlines</a>
-                        <a href="#">United Airlines</a>
-                        <a href="#">Southwest</a>
-                    </div>
-                </div>
-                
-                <div class="clearfix">
-                    <button type="submit" class="signupbtn">Create Account</button>
-                </div>
-            </div>
-        </form>
-    </body>
+        <label for="email"><b>Email: </b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="password-repeat"
+          required
+        />
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            Select an Airlines
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Delta</a>
+            <a href="#">American Airlines</a>
+            <a href="#">United Airlines</a>
+            <a href="#">Southwest</a>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Create Account</button>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
